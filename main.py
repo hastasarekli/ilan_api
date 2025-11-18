@@ -1,10 +1,11 @@
 from fastapi import FastAPI, Query
 from fastapi.middleware.cors import CORSMiddleware
 import json
+import os
 
 app = FastAPI()
 
-# CORS izinleri
+# CORS
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["*"],
@@ -13,8 +14,10 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-# Veriyi yükle
-with open("sample_data.json", "r", encoding="utf-8") as f:
+# JSON dosyasını yükle
+DATA_FILE = os.path.join(os.path.dirname(__file__), "sample_data.json")
+
+with open(DATA_FILE, "r", encoding="utf-8") as f:
     data = json.load(f)
 
 @app.get("/search")
@@ -29,13 +32,14 @@ def search(
 ):
     results = []
     for ilan in data:
-        if (marka.lower() in ilan["arac"].lower() and
-            model.lower() in ilan["arac"].lower() and
-            yil_min <= ilan["yil"] <= yil_max and
-            ilan["km"] <= km_max and
-            fiyat_min <= ilan["fiyat"] <= fiyat_max):
+        if (
+            marka.lower() in ilan["arac"].lower()
+            and model.lower() in ilan["arac"].lower()
+            and yil_min <= ilan["yil"] <= yil_max
+            and ilan["km"] <= km_max
+            and fiyat_min <= ilan["fiyat"] <= fiyat_max
+        ):
             results.append(ilan)
-
     return {"results": results}
 
 @app.get("/detail")
