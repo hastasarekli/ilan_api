@@ -1,24 +1,24 @@
 [
     {
         "ilan_no": "1282469611",
-        "arac": "Dacia Sandero Stepway 1.0 TCe Expression",
+        "arac": "Dacia Sandero Stepway 1.0 TCe EDC",
         "yil": 2025,
         "yakit": "Benzin",
         "vites": "Otomatik",
         "km": 5000,
         "paket": "GSR Paket",
         "fiyat": 600000,
-        "url": "https://sahibinden.com/ilan/1282469611"
+        "url": "sahibinden.com/ilan/1282469611"
     },
     {
         "ilan_no": "1282469612",
-        "arac": "Dacia Sandero Stepway 1.0 TCe Style",
+        "arac": "Dacia Sandero Stepway 1.0 TCe SCE",
         "yil": 2024,
         "yakit": "Benzin",
         "vites": "Manuel",
         "km": 15000,
         "paket": "Style Paket",
         "fiyat": 550000,
-        "url": "https://sahibinden.com/ilan/1282469612"
+        "url": "sahibinden.com/ilan/1282469612"
     }
 ]
