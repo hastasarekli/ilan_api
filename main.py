@@ -4,7 +4,7 @@ import json
 
 app = FastAPI()
 
-# CORS izinleri (Android’den veri çekmek için)
+# CORS izinleri
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["*"],
@@ -13,7 +13,7 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-# Örnek veriler (500.000–700.000 TL arası)
+# Veriyi yükle
 with open("sample_data.json", "r", encoding="utf-8") as f:
     data = json.load(f)
 
@@ -35,6 +35,7 @@ def search(
             ilan["km"] <= km_max and
             fiyat_min <= ilan["fiyat"] <= fiyat_max):
             results.append(ilan)
+
     return {"results": results}
 
 @app.get("/detail")
