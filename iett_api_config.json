@@ -2,8 +2,14 @@
   "CANLI_FILO_URL": "https://api.ibb.gov.tr/iett/FiloDurum/SeferGerceklesme.asmx",
   "CANLI_FILO_METOT": "GetHatOtoKonum_json",
   "CANLI_FILO_SOAP_ACTION": "http://tempuri.org/GetHatOtoKonum_json",
+  "YEDEK_CANLI_URL": "",
+  "YEDEK_CANLI_METOT": "",
+  "YEDEK_CANLI_SOAP_ACTION": "",
   "HAT_DURAK_URL": "https://api.ibb.gov.tr/iett/UlasimAnaVeri/HatDurakGuzergah.asmx",
   "HAT_DETAY_URL": "https://api.ibb.gov.tr/iett/ibb/ibb.asmx",
   "HAT_DETAY_METOT": "DurakDetay_GYY",
-  "HAT_DETAY_SOAP_ACTION": "http://tempuri.org/DurakDetay_GYY"
+  "HAT_DETAY_SOAP_ACTION": "http://tempuri.org/DurakDetay_GYY",
+  "YENILEME_SANIYE": 5,
+  "BAKIM_MODU": false,
+  "BAKIM_MESAJI": "Sistem bakımda. Lütfen sonra tekrar deneyin."
 }
