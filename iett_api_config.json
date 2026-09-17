@@ -1,1 +1,9 @@
-
+{
+  "CANLI_FILO_URL": "https://api.ibb.gov.tr/iett/FiloDurum/SeferGerceklesme.asmx",
+  "CANLI_FILO_METOT": "GetHatOtoKonum_json",
+  "CANLI_FILO_SOAP_ACTION": "http://tempuri.org/GetHatOtoKonum_json",
+  "HAT_DURAK_URL": "https://api.ibb.gov.tr/iett/UlasimAnaVeri/HatDurakGuzergah.asmx",
+  "HAT_DETAY_URL": "https://api.ibb.gov.tr/iett/ibb/ibb.asmx",
+  "HAT_DETAY_METOT": "DurakDetay_GYY",
+  "HAT_DETAY_SOAP_ACTION": "http://tempuri.org/DurakDetay_GYY"
+}
